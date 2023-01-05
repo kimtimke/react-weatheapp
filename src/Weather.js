@@ -13,22 +13,30 @@ export default function Weather() {
       </ul>
       <div className="row">
         <div className="col-6">
-          <div className="clearfix">
+          <div className="clearfix d-flex align-items-center">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="Cloudy"
               className="float-left"
             />
             <div className="float-left">
-              <span className="temperature"> 20 </span>
-              <span className="unit"> °C </span>
+              <span>
+                <strong className="temperature"> 20 </strong>
+              </span>
+              <span className="units">°C</span>
             </div>
           </div>
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity:</li>
-            <li>Wind:</li>
+            <li>
+              <i className="fa-solid fa-droplet"></i> Humidity:
+              <span className="humidity"></span>%
+            </li>
+            <li>
+              <i className="fa-solid fa-wind"></i> Wind:
+              <span className="wind"></span> km/h
+            </li>
             <li>Precipitation:</li>
           </ul>
         </div>
