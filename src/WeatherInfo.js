@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -6,7 +7,8 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <div className="clearfix d-flex align-items-center">
-            <img src={props.data.iconUrl} alt="Cloudy" className="float-left" />
+            <WeatherIcon code={props.data.icon} />
+
             <div className="float-left">
               <span>
                 <strong className="temperature">
