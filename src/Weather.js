@@ -1,8 +1,13 @@
 import React from "react";
 import Search from "./Search";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+  const apiKey = "6950fb0a1f88f981260fcceba2a5d047";
+  let city = "London";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
   return (
     <div className="Weather">
       <h1>Swakopmund</h1>
