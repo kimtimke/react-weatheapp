@@ -15,7 +15,15 @@ export default function App() {
             rel=" noreferrer"
           >
             {" "}
-            open-sourced
+            open-sourced on GitHub {""}
+          </a>
+          and {""}
+          <a
+            href="https://delicate-dieffenbachia-95065b.netlify.app/"
+            target="_blank"
+            rel=" noreferrer"
+          >
+            hosted on Netlify
           </a>
         </footer>
       </div>
