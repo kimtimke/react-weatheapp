@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import FormattedDate from "./FormattedDate";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
+import { ThreeDots } from "react-loader-spinner";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -76,6 +77,17 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <ThreeDots
+        height="80"
+        width="80"
+        radius="9"
+        color="rgb(28, 20, 85)"
+        ariaLabel="three-dots-loading"
+        wrapperStyle={{}}
+        wrapperClassName=""
+        visible={true}
+      />
+    );
   }
 }

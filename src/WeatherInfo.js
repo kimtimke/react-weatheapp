@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <div className="row">
         <div className="col-6">
-          <div className="clearfix d-flex align-items-center">
+          <div className="clearfix d-flex align-items-center mt-3">
             <WeatherIcon code={props.data.icon} size={58} />
 
             <div className="float-left">
@@ -17,15 +17,16 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>
-              <i className="fa-solid fa-droplet"></i> Humidity: {}
+            <li className="mt-4">
+              <i className="fa-solid fa-droplet"></i>
+              {} Humidity: {}
               {props.data.humidity} %
             </li>
-            <li>
-              <i className="fa-solid fa-wind"></i> Wind: {}
+            <li className="mt-2">
+              <i className="fa-solid fa-wind"> </i>
+              {} Wind: {}
               {props.data.wind} km/h
             </li>
-            <li>Precipitation:</li>
           </ul>
         </div>
       </div>
